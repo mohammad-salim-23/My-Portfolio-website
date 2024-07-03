@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import Yummy from "../assets/images/Yummy.jpg"
+import mountain from "../assets/images/mountain1.jpg"
 const Project = () => {
     const navigate = useNavigate();
     const handleViewDetails = (id)=>{
@@ -42,6 +43,24 @@ const Project = () => {
             </p>
             <div className="card-actions">
             <button onClick={()=>handleViewDetails(2)} className="btn bg-green-500">View Details</button>
+            </div>
+          </div>
+        </div>
+        <div className="card bg-base-100 w-96 shadow-xl">
+          <figure className="px-10 pt-10">
+            <img
+              src={mountain}
+              alt="Shoes"
+              className="rounded-xl"
+            />
+          </figure>
+          <div className="card-body items-center text-center">
+            <h2 className="card-title">Art & Crafts</h2>
+            <p>
+            A Real Estate platform showcasing handcrafted art and crafts. Features include property listings, handmade paper sculptures, embroidered textiles, watercolor illustrations, and user authentication with MongoDB.
+            </p>
+            <div className="card-actions">
+            <button onClick={()=>handleViewDetails(3)} className="btn bg-green-500">View Details</button>
             </div>
           </div>
         </div>

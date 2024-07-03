@@ -3,7 +3,7 @@ import emailjs from "emailjs-com";
 import salimImg from "../../assets/images/salim1.jpg";
 import Project from "../../component/Project";
 import linkedinIcon from "../../assets/images/linkedin.jpg";
- // Add the path to your Facebook icon image
+import positive from "../../assets/images/positive.jpg"
 
 const About = () => {
     const form = useRef();
@@ -32,8 +32,9 @@ const About = () => {
                         className="max-w-sm rounded-lg shadow-2xl"
                         alt="Mohammad Salim"
                     />
+                   
                     <div>
-                        <h1 className="text-3xl font-bold">About Me</h1>
+                        <h1 className="text-3xl font-bold mt-9">About Me</h1>
                         <h3 className="text-4xl font-medium mb-5">
                             I am available for <span className="text-blue-600">web development</span> related jobs
                         </h3>
@@ -42,7 +43,8 @@ const About = () => {
                         <h3 className="font-semibold">Education: Studying honours, 2nd year in CSE</h3>
                         <h3 className="font-semibold">Location: Sylhet, Bangladesh</h3>
 
-                        <div className="mt-6">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div className="mt-12 border-r-2">
                             <h3 className="text-2xl font-bold">Contact Information</h3>
                             <h3 className="font-semibold">Phone: +880 1581891023</h3>
                             <h3 className="font-semibold">Email: mohammadsalim017427@gmail.com</h3>
@@ -50,14 +52,14 @@ const About = () => {
                                 <a href="https://www.linkedin.com/in/mohammad-salim-bb09ba264/" target="_blank" rel="noopener noreferrer">
                                     <img src={linkedinIcon} alt="LinkedIn" className="w-8 h-8" />
                                 </a>
-                                <a href="https://github.com/mohammad-salim" target="_blank" rel="noopener noreferrer">
+                                <a href="https://github.com/mohammad-salim-23" target="_blank" rel="noopener noreferrer">
                                     <img src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/github.svg" alt="GitHub" className="w-8 h-8" />
                                 </a>
                            
                             </div>
                         </div>
 
-                        <div className="mt-8">
+                        <div className="mt-8   mx-4">
                             <h3 className="text-2xl font-bold">Send me a message</h3>
                             <form ref={form} onSubmit={sendEmail}>
                                 <div className="form-control">
@@ -77,6 +79,7 @@ const About = () => {
                                 </div>
                             </form>
                         </div>
+                    </div>
                     </div>
                 </div>
             </div>

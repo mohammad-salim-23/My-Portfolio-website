@@ -3,7 +3,8 @@ import emailjs from "emailjs-com";
 import salimImg from "../../assets/images/salim1.jpg";
 import Project from "../../component/Project";
 import linkedinIcon from "../../assets/images/linkedin.jpg";
-import positive from "../../assets/images/positive.jpg"
+import Footer from "../../component/Footer";
+
 
 const About = () => {
     const form = useRef();
@@ -42,7 +43,20 @@ const About = () => {
                         <h3 className="font-semibold">Age: 22</h3>
                         <h3 className="font-semibold">Education: Studying honours, 2nd year in CSE</h3>
                         <h3 className="font-semibold">Location: Sylhet, Bangladesh</h3>
+                    <div>
+                        <h3 className="text-3xl">Technologies that I know</h3>
+                        
+<img src="https://github.com/mir-hussain/mir-hussain/blob/main/images/icons/HTML.png"/>
+<img src="https://github.com/mir-hussain/mir-hussain/blob/main/images/icons/css.png"/>
+<img src="https://github.com/mir-hussain/mir-hussain/blob/main/images/icons/JavaScript.png"/>
+<img src="https://github.com/mir-hussain/mir-hussain/blob/main/images/icons/react.png"/>
 
+
+<img src="https://github.com/mir-hussain/mir-hussain/blob/main/images/icons/tailwind.png"/>
+
+
+
+                    </div>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="mt-12 border-r-2">
                             <h3 className="text-2xl font-bold">Contact Information</h3>
@@ -88,6 +102,7 @@ const About = () => {
                 <h3 className="text-3xl font-medium">RECENT PROJECT</h3>
                 <Project />
             </div>
+            <Footer></Footer>
         </div>
     );
 };
